@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <title>Theth pahadi</title>
+	<link rel="icon" 
+     type="image/png" 
+     href="Images/logo1.png">
+		<link rel="stylesheet" href="../SCSS/animate.css">	
+	<link rel="stylesheet" href="../SCSS/bootstrap.min.css">	
+	<link rel="stylesheet" href="../SCSS/main.css">
+	<link rel="stylesheet" href="../SCSS/meanmenu.min.css">
+	<link rel="stylesheet" href="../SCSS/nivo-slider.css">	
+	<link rel="stylesheet" href="../SCSS/normalize.css">
+	<link rel="stylesheet" href="../SCSS/owl.carousel.css">
+	<link rel="stylesheet" href="../SCSS/owl.theme.css">	
+	<link rel="stylesheet" href="../SCSS/owl.transitions.css">
+	<link rel="stylesheet" href="../SCSS/preview.css">
+	<link rel="stylesheet" href="../SCSS/slick-theme.css">	
+	<link rel="stylesheet" href="../SCSS/slick.css">
+	<link rel="stylesheet" href="../SCSS/style-css.css">
+	<link rel="stylesheet" href="../SCSS/responsive.css">								
+	<link rel="stylesheet" href="../SCSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">	
+    <link rel="stylesheet" href="../SCSS/mine.css">
+    <link rel="stylesheet" href="../SCSS/jquery-ui.css">
+    <link rel="stylesheet" href="../SCSS/bootstraptoken.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header-top">
+			 <div class="container">
+				 <div class="row">
+					 <div class="col-xs-12 col-sm-6 col-md-6">
+						 <div class="phone">phone :<span> 9773696255</span></div>
+					 </div>
+					 <div class="col-xs-12 col-sm-6 col-md-6">
+						 <div class="top-bar-menu">
+							 <ul>
+								 <!--SINGLE MENU WITH DROPDOWN START-->
+								 <li class="last">
+									 <a href="">My Account
+									 <i class="fa fa-angle-down"></i></a>
+									 <ul class="top-drop account">
+										 <li><a href="">Pending Orders</a></li>
+										 <li><a href="">Sales</a></li>
+										 <li><a href="">Stock Details</a></li>
+										 <li><a href="">Add Product</a></li>
+										 <li><a href="">Logout</a></li>
+									 </ul>
+								 </li>
+								 <!--SINGLE MENU WITH DROPDOWN START-->
+							 </ul>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	<div class="container">
+		<div class="side">
+		
+		<div class="preview-images-zone">
+		</div>
+		<fieldset class="form-group upload-btn">
+			<a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload Image</a>
+			<input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control2" multiple>
+		</fieldset>
+		</div>
+	</div>
+	
+	<div class="container">
+		  <div class="col-6">
+			<form class="form-horizontal">
+			<fieldset>
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="product_id">PRODUCT ID</label>  
+				  <div class="col-md-4">
+				  <input id="product_id" name="product_id" placeholder="PRODUCT ID" class="form-control input-md" required="" type="text">
+					
+				  </div>
+				</div>
+				
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>  
+				  <div class="col-md-4">
+				  <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
+					
+				  </div>
+				</div>
+				
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="product_name_fr">PRODUCT DESCRIPTION FR</label>  
+				  <div class="col-md-4">
+				  <input id="product_name_fr" name="product_name_fr" placeholder="PRODUCT DESCRIPTION FR" class="form-control input-md" required="" type="text">
+					
+				  </div>
+				</div>
+				
+				<!-- Select Basic -->
+				<div class="inputalign">
+					<div class="availableColor">
+						AVAILABLE COLOR
+					</div>
+					  <div class="forWidth">
+					 	<input type="text" class="form-control" id="tokenfield1" value="red,green,blue" />			
+					  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="available_quantity">AVAILABLE QUANTITY</label>  
+				  <div class="col-md-4">
+				  <input id="available_quantity" name="available_quantity" placeholder="AVAILABLE QUANTITY" class="form-control input-md" required="" type="text">
+					
+				  </div>
+				</div>
+				<div class="inputalign">
+					<div class="availableColor">
+						AVAILABLE SIZE
+					</div>
+					  <div class="forWidth">
+					 	<input type="text" class="form-control"  id="tokenfield2"  value="red,green,blue" />			
+					  </div>
+				</div>
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="product_description">PRODUCT DESCRIPTION</label>
+				  <div class="col-md-4">                     
+					<textarea class="form-control" id="product_description" name="product_description"></textarea>
+				  </div>
+				</div>
+				<!-- Button -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="singlebutton"></label>
+				  <div class="col-md-4">
+					<button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+				  </div>
+				  </div>
+				</fieldset>	
+		  </div>
+		</div>
+	</div>	
+
+<script src="../Js/jquery-1.11.3.min.js"></script>
+<script src="../Js/jquery-ui.js"></script>
+<script src="../Js/bootstrap.min.js"></script>
+<script src="../Js/boostraptoken.js"></script>
+<script>
+
+$(document).ready(function() {
+    document.getElementById('pro-image').addEventListener('change', readImage, false);
+    
+    $( ".preview-images-zone" ).sortable();
+    
+    $(document).on('click', '.image-cancel', function() {
+        let no = $(this).data('no');
+        $(".preview-image.preview-show-"+no).remove();
+    });
+});
+
+
+
+var num = 4;
+function readImage() {
+    if (window.File && window.FileList && window.FileReader) {
+        var files = event.target.files; //FileList object
+        var output = $(".preview-images-zone");
+
+        for (let i = 0; i < files.length; i++) {
+            var file = files[i];
+            if (!file.type.match('image')) continue;
+            
+            var picReader = new FileReader();
+            
+            picReader.addEventListener('load', function (event) {
+                var picFile = event.target;
+                var html =  '<div class="preview-image preview-show-' + num + '">' +
+                            '<div class="image-cancel" data-no="' + num + '">x</div>' +
+                            '<div class="image-zone"><img id="pro-img-' + num + '" src="' + picFile.result + '"></div>' +
+                            '</div>';
+
+                output.append(html);
+                num = num + 1;
+            });
+
+            picReader.readAsDataURL(file);
+        }
+        $("#pro-image").val('');
+    } else {
+        console.log('Browser not support');
+    }
+}
+
+$('#tokenfield1').tokenfield({
+  autocomplete: {
+    source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
+    delay: 100
+  },
+  showAutocompleteOnFocus: true
+})
+
+$('#tokenfield2').tokenfield({
+  autocomplete: {
+    source: ['male','female','unisex'],
+    delay: 100
+  },
+  showAutocompleteOnFocus: true
+})
+</script>
+</html>
+the q
