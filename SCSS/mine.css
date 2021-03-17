@@ -1045,15 +1045,6 @@ footer h2 i{
     margin-top: 40px;
     border: none;
 }
-.form-group .col-md-4 {
-    width: 70%;
-}
-label.col-md-4.control-label {
-    text-align: left;
-    width: 30%;
-    color: grey;
-    line-height: 10px;
-}
 .btn-primary {
     color: #fff;
     background-color:#4FC1FF ;
@@ -1069,18 +1060,15 @@ margin-left: 0;
 }
 .preview-images-zone {
     width: 100%;
-    border: 1px solid #ddd;
-    min-height: 180px;
+    max-height: 180px;
     display: flex;
     padding: 5px 5px 0px 5px;
-    position: relative;
-    overflow:auto;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 .preview-images-zone > .preview-image:first-child {
     height: 185px;
     width: 185px;
-    position: relative;
     margin-right: 5px;
 }
 .preview-images-zone > .preview-image {
@@ -1090,6 +1078,8 @@ margin-left: 0;
     float: left;
     margin-bottom: 5px;
     position: relative;
+    border: 1px solid #ccc;
+    overflow: hidden;
 
 }
 .preview-images-zone > .preview-image > .image-zone {
@@ -1115,17 +1105,20 @@ margin-left: 0;
     position: absolute;
     top: 2px;
     right: 6px;
-    font-weight: bold;
     cursor: pointer;
-    display: none;
     z-index: 100;
+    background: rgba(204,204,204,0.33);
+    padding: 0 5px;
+    font-weight: normal;
+    border-radius: 3px;
+    height: 20px;
+    line-height: 20px;
 }
 .preview-image:hover > .image-zone {
     cursor: move;
     opacity: .5;
 }
-.preview-image:hover > .tools-edit-image,
-.preview-image:hover > .image-cancel {
+.preview-image:hover > .tools-edit-image {
     display: block;
 }
 .ui-sortable-helper {
@@ -1134,7 +1127,7 @@ margin-left: 0;
 }
 
 .upload-btn {
-    width: 10%;
+    display: inline-block;
     border: none;
     background: #4FC1FF;
     padding: 9px 13px;
@@ -1176,3 +1169,14 @@ margin-left: 0;
       -webkit-font-feature-settings: 'liga';
       -webkit-font-smoothing: antialiased;
   }
+  .tokenfield .token{
+    margin: 10px 5px 5px 0;
+  }
+  .helping-note {
+    font-size: 13px;
+    color: #888;
+    float: right;
+}
+.form-horizontal .control-label{
+    text-align: left;
+}

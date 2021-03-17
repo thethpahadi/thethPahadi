@@ -269,3 +269,10 @@ span.starRed {
 .show-log-panel .submit_btn{
     display: block;
 }
+.login-heading{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.text-danger {
+    font-size: 12px;
+}

@@ -4,7 +4,8 @@
 	<link rel="icon" 
      type="image/png" 
      href="Images/logo1.png">
-		<link rel="stylesheet" href="../SCSS/animate.css">	
+	<link rel="stylesheet" href="../SCSS/animate.css">	
+	<link rel="stylesheet" href="../SCSS/bootstraptoken.css">
 	<link rel="stylesheet" href="../SCSS/bootstrap.min.css">	
 	<link rel="stylesheet" href="../SCSS/main.css">
 	<link rel="stylesheet" href="../SCSS/meanmenu.min.css">
@@ -22,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">	
     <link rel="stylesheet" href="../SCSS/mine.css">
     <link rel="stylesheet" href="../SCSS/jquery-ui.css">
-    <link rel="stylesheet" href="../SCSS/bootstraptoken.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -60,7 +61,7 @@
 		<div class="preview-images-zone">
 		</div>
 		<fieldset class="form-group upload-btn">
-			<a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload Image</a>
+			<a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload Images</a>
 			<input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control2" multiple>
 		</fieldset>
 		</div>
@@ -72,17 +73,16 @@
 			<fieldset>
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="product_id">PRODUCT ID</label>  
-				  <div class="col-md-4">
-				  <input id="product_id" name="product_id" placeholder="PRODUCT ID" class="form-control input-md" required="" type="text">
-					
+				  <label class="col-md-2 control-label" for="product_id">PRODUCT ID</label>  
+				  <div class="col-md-6">
+				  <input id="product_id" name="product_id" placeholder="Auto generated readonly" class="form-control input-md" required="" type="text" readonly>
 				  </div>
 				</div>
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>  
-				  <div class="col-md-4">
+				  <label class="col-md-2 control-label" for="product_name">PRODUCT NAME</label>  
+				  <div class="col-md-6">
 				  <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
 					
 				  </div>
@@ -90,48 +90,44 @@
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="product_name_fr">PRODUCT DESCRIPTION FR</label>  
-				  <div class="col-md-4">
-				  <input id="product_name_fr" name="product_name_fr" placeholder="PRODUCT DESCRIPTION FR" class="form-control input-md" required="" type="text">
+				  <label class="col-md-2 control-label" for="product_name">PRODUCT DESCRIPTION</label>  
+				  <div class="col-md-6">
+				  <input id="product_name_fr" name="product_name" placeholder="PRODUCT DESCRIPTION FR" class="form-control input-md" required="" type="text">
 					
 				  </div>
 				</div>
 				
 				<!-- Select Basic -->
-				<div class="inputalign">
-					<div class="availableColor">
-						AVAILABLE COLOR
-					</div>
-					  <div class="forWidth">
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="available_quantity">AVAILABLE COLOR</label> 
+					  <div class="col-md-6">
 					 	<input type="text" class="form-control" id="tokenfield1" value="red,green,blue" />			
 					  </div>
 				</div>
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="available_quantity">AVAILABLE QUANTITY</label>  
-				  <div class="col-md-4">
+				  <label class="col-md-2 control-label" for="available_quantity">AVAILABLE QUANTITY</label>  
+				  <div class="col-md-6">
 				  <input id="available_quantity" name="available_quantity" placeholder="AVAILABLE QUANTITY" class="form-control input-md" required="" type="text">
 					
 				  </div>
 				</div>
-				<div class="inputalign">
-					<div class="availableColor">
-						AVAILABLE SIZE
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="available_quantity">AVAILABLE SIZE</label>  
+					<div class="col-md-6">
+					 	<input type="text" class="form-control"  id="tokenfield2"  value="6-month,1-year,18-month" />
 					</div>
-					  <div class="forWidth">
-					 	<input type="text" class="form-control"  id="tokenfield2"  value="red,green,blue" />			
-					  </div>
 				</div>
 				<!-- Textarea -->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="product_description">PRODUCT DESCRIPTION</label>
-				  <div class="col-md-4">                     
+				  <label class="col-md-2 control-label" for="product_description">PRODUCT DESCRIPTION</label>
+				  <div class="col-md-6">                     
 					<textarea class="form-control" id="product_description" name="product_description"></textarea>
 				  </div>
 				</div>
 				<!-- Button -->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="singlebutton"></label>
-				  <div class="col-md-4">
+				  <label class="col-md-2 control-label" for="singlebutton"></label>
+				  <div class="col-md-6">
 					<button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
 				  </div>
 				  </div>

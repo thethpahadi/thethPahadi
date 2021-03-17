@@ -248,7 +248,7 @@ width: 100%;
   font-size: 40px;
   color: #fff;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 .forScroll {
     overflow: auto;
@@ -456,7 +456,7 @@ height: 35px;
 line-height: 35px;
 position: relative;
 text-align: center;
-top: 3px;
+top: 0px;
 width: 35px;
 }
 .sin-bottom-menu{display: inline-block}
@@ -1026,10 +1026,7 @@ line-height: 46px;
 }
 .mail-submit .icon-envelop {
   float: right;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 5px;
+  padding: 11px 10px;
   line-height: 23px;
 }
 /*----2.9.SOCIAL AREA-----*/
@@ -1531,10 +1528,11 @@ padding: 0px 5px;
 font-size: 24px;
 font-weight: bold;
 margin-bottom: 27px;
-text-transform: capitalize;font-family: 'Nunito', sans-serif;
+text-transform: capitalize;
+font-family: 'Nunito', sans-serif;
 }
 .cat-list li {
-border-bottom: 2px solid #ffffff;
+border-bottom: 1px solid #ffffff;
 color: #858585;
 font-size: 18px;
 margin-bottom: 11px;
@@ -1616,7 +1614,6 @@ padding-right: 7px;
 border: 1px solid #fcaac9;
 color: #858585;
 display: inline-block;
-font-family: Nunito;
 font-size: 13px !important;
 margin: 0 0 8px;
 padding: 8px 10px;
@@ -1730,7 +1727,6 @@ width: 100%;
 }
 .grid-list-button li {float: right;}
 .grid-list-button {float: right;}
-.shop-product-area {padding: 0 10px;}
 .grid-list-button li.line::before {
 border-right: 1px solid #4abefb;
 content: "";
@@ -2243,7 +2239,7 @@ width: 34px;
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;
   padding: 9px 40px;
-  margin: 0px 20px;
+  margin: 0;
   width: 96%;
 }
 .table-img img {
@@ -2852,5 +2848,5 @@ span.icon-bin {
     font-size: 14px;
 }
 .shipping-heading h1 {
-    margin: 11px 15px;
+    margin: 50px 15px 10px;
 }
