@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="SCSS/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">	
 	<link rel="stylesheet" href="SCSS/responsive.css">
+	
+
 </head>
 <body>
 	<section class="header-area">
@@ -64,15 +66,14 @@
 						 </div>
 					 </div>
 					 <div class=" col-sm-12 col-md-9 col-xs-12">
-						 <div class=" categorys-product-search no-padding">
+						 <div class="categorys-product-search no-padding">
 							 <form class="search-form-cat">
 								 <div class="">
 									 <select class="cat-search " name="catsearch">
 										 <option value="">All Categories</option>
 										 <option value="2">Women</option>
-										 <option value="3">T-Shirts</option>
+										 <option value="3">T-Shirts</option>	
 										 <option value="4">Men</option>
-										 <option value="5">Shoose</option>
 										 <option value="6">Dress</option>
 										 <option value="7">Tops</option>
 										 <option value="8">Casual</option>
@@ -902,7 +903,7 @@
 								   </span>   
 								</div>
 								<div class="action-b">
-									<div class="quick-view-b">
+									<div class="quick-view-b" data-toggle="modal" data-target="#exampleModal" >
 										<span class="icon-images"></span>
 										<a href="">
 											<span>quick view</span>
@@ -917,7 +918,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<!-- <div class="col-sm-6 col-md-4">
 							<div class="sin-pro-b">
 								<div class="pro-img-b">
 									<a href=""><img src="Images/final-image6.png" alt=""></a>
@@ -943,7 +944,8 @@
 								<div class="action-b">
 									<div class="quick-view-b">
 										<span class="icon-images"></span>
-										<a href="">
+
+										<a href="#unique-id">
 											<span>quick view</span>
 										</a>
 									</div>
@@ -982,7 +984,7 @@
 								<div class="action-b">
 									<div class="quick-view-b">
 										<span class="icon-images"></span>
-										<a href="">
+										<a href="#unique-id">
 											<span>quick view</span>
 										</a>
 									</div>
@@ -1021,7 +1023,7 @@
 								<div class="action-b">
 									<div class="quick-view-b">
 										<span class="icon-images"></span>
-										<a href="">
+										<a href="#unique-id">
 											<span>quick view</span>
 										</a>
 									</div>
@@ -1060,7 +1062,7 @@
 								<div class="action-b">
 									<div class="quick-view-b">
 										<span class="icon-images"></span>
-										<a href="">
+										<a href="#unique-id">
 											<span>quick view</span>
 										</a>
 									</div>
@@ -1097,12 +1099,12 @@
 								   </span>   
 								</div>
 								<div class="action-b">
-									<div class="quick-view-b">
-										<span class="icon-images"></span>
-										<a href="">
+									<a href="#unique-id">
+										<div class="quick-view-b">
+											<span class="icon-images"></span>
 											<span>quick view</span>
-										</a>
-									</div>
+										</div>
+									</a>
 									<div class="add-cart-b">
 									   <a href="">
 										<span class="icon-cart"></span>
@@ -1138,7 +1140,7 @@
 								<div class="action-b">
 									<div class="quick-view-b">
 										<span class="icon-images"></span>
-										<a href="">
+										<a href="#unique-id">
 											<span>quick view</span>
 										</a>
 									</div>
@@ -1177,7 +1179,7 @@
 								<div class="action-b">
 									<div class="quick-view-b">
 										<span class="icon-images"></span>
-										<a href="">
+										<a href="#unique-id">
 											<span>quick view</span>
 										</a>
 									</div>
@@ -1216,7 +1218,7 @@
 								<div class="action-b">
 									<div class="quick-view-b">
 										<span class="icon-images"></span>
-										<a href="">
+										<a href="#unique-id">
 											<span>quick view</span>
 										</a>
 									</div>
@@ -1228,7 +1230,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 	</section>
 	<!-- TAB AREA END -->
 	<!-- NEWS LETTER AREA START -->
@@ -1373,6 +1375,37 @@
 			</div>
 		</div>
 	  </div>
+<!-- quick view -->
+
+<div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<button type="button" class="close slider-close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		  <div id="main-slider2" class="owl-carousel owl-theme">
+			<div class="item">
+				<div class="nivo-caption" style="display: block;">
+					<img src="Images/demo-5.jpg" alt="The Last of us">
+				</div>
+			</div>
+			<div class="item">
+				<div class="nivo-caption" style="display: block;">
+					<img src="Images/demo-6.jpg" alt="GTA V">
+				</div>
+			</div>
+			<div class="item">
+				<div class="nivo-caption" style="display: block;">
+					<img src="Images/demo-7.jpg" alt="Mirror Edge">
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+  </div>
+<!-- Quick view close -->
+
+
 	<!-- FOOTER AREA END -->
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="Js/bootstrap.min.js"></script>
@@ -1413,7 +1446,7 @@ $(document).ready(function() {
 			}
 		}
  });
-		$("#main-slider").owlCarousel({
+		$("#main-slider, #main-slider2").owlCarousel({
 			navigation : true, // Show next and prev buttons
 			navigationText: ["<span class='icon-arrow-left2'></span>","<span class='icon-arrow-right2'></span>"], 
 			responsiveClass:true,

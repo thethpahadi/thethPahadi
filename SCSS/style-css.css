@@ -619,7 +619,6 @@ color: #ffffff;
 font-size: 24px;
 font-weight: bold;
 left: 0;
-margin-left: -50px;
 position: absolute;
 right: 0;
 text-align: center;
@@ -835,7 +834,8 @@ left: 0;
 position: absolute;
 right: 0;
 bottom: -200px;
-z-index: 5555;transition: all 0.3s ease 0s;
+z-index: 1;
+transition: all 0.3s ease 0s;
 }
 .sin-pro-b:hover .action-b{bottom:0px;} 
 .action-b div a{
@@ -2849,4 +2849,13 @@ span.icon-bin {
 }
 .shipping-heading h1 {
     margin: 50px 15px 10px;
+}
+button.close.slider {
+  position: relative;
+  z-index: 2;
+}
+
+.close.slider-close{
+  position: relative;
+  z-index: 12;
 }
