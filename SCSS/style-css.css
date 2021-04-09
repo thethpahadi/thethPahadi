@@ -2855,7 +2855,22 @@ button.close.slider {
   z-index: 2;
 }
 
-.close.slider-close{
+.close.slider-close {
   position: relative;
   z-index: 12;
+  padding: 0 5px;
+}
+.modal-content span {
+  font-size: 29px;
+}
+.nivo-caption.forMargin {
+  padding: 0px;
+}
+.logo img {
+  height: 80px;
+  margin-top: -11px;
+  margin-bottom: -13px;
+}
+.menu{
+  width: 161px;
 }
