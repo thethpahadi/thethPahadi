@@ -151,17 +151,10 @@ border: none;border-bottom: 1px solid #ddd;padding-right: 0px;
 }
 .top-bar-menu ul li a:hover{color: #fcaac9}
 .top-bar-menu ul li .top-drop li a:hover{color: #e03550}
-select {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-}
 select::-ms-expand { /* for IE 11 */
     display: none;
 }
 select {
--moz-appearance: none;
-background: #F2F2F2 url("img/icon/caret.png") no-repeat scroll 92% center;
 border: 0 solid #aaa;
 border-radius: 2px;
 color: #555;
@@ -174,6 +167,7 @@ padding-top: 2px;
 text-overflow: ellipsis;
 white-space: nowrap;
 width: 155px;
+background-color: #F2F2F2;
 }
 .categorys-product-search {
 background: #f2f2f2 none repeat scroll 0 0;
@@ -398,7 +392,6 @@ opacity: 0;
 overflow: hidden;
 position: absolute;
 visibility: hidden;
-width: 908px;
 z-index: 999;
 padding: 12px 0px;
 }
@@ -882,7 +875,6 @@ text-transform: capitalize;
 .quick-view-b {
   }
 .add-cart-b{
-background:#FCAAC9 url("img/icon/add-cart.png") no-repeat scroll center center;
 }
 span.text {
 float: left;
@@ -1237,7 +1229,6 @@ position: relative;
 width: 89%;
 }
 .search-box select {
-background: #fff url("img/icon/caret.png") no-repeat scroll 92% center;
 border: medium none;
 border-radius: 0;
 box-shadow: none;
@@ -2204,8 +2195,9 @@ display: inline-block;
   height: 500px;
 }
 .cart-table td {
-text-align: center;
-vertical-align: middle !important;
+  text-align: center;
+  vertical-align: middle !important;
+  font-size: 14px;
 }
 .cart-table thead {background: #5c5c5c none repeat scroll 0 0;}
 .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
@@ -2243,7 +2235,7 @@ width: 34px;
   width: 96%;
 }
 .table-img img {
-  width: 100px;
+  width: 50px;
 }
 .right {
   float: left;
@@ -2873,4 +2865,54 @@ button.close.slider {
 }
 .menu{
   width: 161px;
+}
+span.block {
+  display: block;
+  height: 5px;
+}
+select#selectThis {
+  background: none;
+}
+select.selectThis {
+  background: none;
+  width:auto;
+  padding: 0;
+  color: grey;
+  text-transform: unset
+}
+.submit {
+  background: #4FC1FF;
+  color: #fff;
+  border: none;
+  padding: 11px 56px;
+  margin: 20px 0;
+  font-size: 15px;
+  width: 15%;
+  float: left;
+}
+.submit:hover{
+  background: #ff91b8;
+}
+
+.submit1 {
+  background: #4FC1FF;
+  color: #fff;
+  border: none;
+  padding: 11px 56px;
+  margin: 20px 0;
+  font-size: 15px;
+  width: 15%;
+  float: right;
+}
+.submit1:hover{
+  background: #ff91b8;
+}
+.dateRange input[type="text"] {
+  color: grey;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  margin-top: 21px; 
+}
+.dateRange {
+  text-align: center;
 }
