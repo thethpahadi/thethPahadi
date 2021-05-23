@@ -41,7 +41,6 @@
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
-.container{width: 1200px}
 html, body {height: 100%;font-family: 'Nunito', sans-serif;}
 .floatleft {float:left}
 .floatright {float:right}
@@ -394,6 +393,7 @@ position: absolute;
 visibility: hidden;
 z-index: 999;
 padding: 12px 0px;
+width:750px;
 }
 .main-menu ul li:hover .mega-menu,.main-menu ul li:hover .sub-menu {
 opacity: 1;
@@ -998,7 +998,7 @@ display: inline-block;
 margin-top: 22px;
 min-height: 60px;
 position: relative;
-width: 73%;
+width: 100%;
 }
 .mail-submit button {
 background: #fcaac9 none repeat scroll 0 0;

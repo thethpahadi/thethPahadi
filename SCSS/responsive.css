@@ -334,6 +334,8 @@ font-size: 12px;padding-left: 0px;
 .categorys-product-search button {
 font-size: 17px;
 padding-top: 9px;
+float: right;
+margin-right: 5px;
 }    
 .top-cart-wrapper {
 float: none;
@@ -536,7 +538,10 @@ margin: 27px 0;
 
 /*---- Large Mobile :480px. ----*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+  .tab-area .area-heading{
+    margin: 0 20px 20px;
+    width: 90%;
+  }
 select {
 padding-left: 9px;
 width: 116px;
