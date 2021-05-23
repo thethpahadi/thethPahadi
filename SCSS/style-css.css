@@ -201,7 +201,7 @@ span.icon-search {
 
 /*----2.2.HEADER MIDDLE AREA------*/
 .header-middle {
-padding: 27px 0;
+padding: 20px 0;
 }
     /*-----cart area-------*/
 .top-cart-wrapper {
@@ -2915,4 +2915,8 @@ select.selectThis {
 }
 .dateRange {
   text-align: center;
+}
+.mobile-menu,
+.icon-menu  {
+  display: none;
 }
