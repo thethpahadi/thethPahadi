@@ -45,4 +45,7 @@
 				pauseOnHover: true,
 				manualAdvance: false
 			 }); 
+			 $('#toggleMobileMenu').click(function(){
+				$("#menuItems").slideToggle();
+			})
 })(jQuery); 

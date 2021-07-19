@@ -320,7 +320,7 @@ span.icon-search {
 /*----2.2.HEADER MIDDLE AREA------*/
 
 .header-middle {
-    padding: 27px 0;
+    padding: 20px 0;
 }
 
 
@@ -570,7 +570,7 @@ nav {
 }
 
 .main-menu ul li .mega-menu {
-    background-color: #F5F5F5;
+    <<<<<<< HEAD background-color: #F5F5F5;
     left: 0;
     opacity: 0;
     overflow: hidden;
@@ -586,6 +586,14 @@ nav {
     z-index: 999;
     visibility: visible;
     transition: transform 0.5s;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    z-index: 999;
+    padding: 12px 0px;
+    width: 750px;
 }
 
 .main-menu ul li .mega-menu .mega-catagory {
@@ -1395,13 +1403,12 @@ input.caupon-input {
 }
 
 .mail-submit {
-    background-color: #ffffff;
     border: 2px solid #d9d9d9;
     display: inline-block;
     margin-top: 22px;
     min-height: 60px;
     position: relative;
-    width: 73%;
+    width: 100%;
 }
 
 .mail-submit button {
@@ -4081,4 +4088,9 @@ select.selectThis {
 
 .dateRange {
     text-align: center;
+}
+
+.mobile-menu,
+.icon-menu {
+    display: none;
 }
