@@ -1,0 +1,93 @@
+.Imageboxes {
+    border: 1px solid #bfb8b8;
+    margin: 10px 0;
+}
+
+.Imageboxes:hover {
+    border: 1px solid red;
+}
+
+.imageResult {
+    width: 30%;
+    display: inline-block;
+    margin: 70px;
+    float: left;
+}
+
+.imageHover {
+    width: 5%;
+    display: inline-block;
+    float: left;
+    margin: 40px 0;
+}
+
+.rightBlock {
+    width: 52%;
+    display: inline-block;
+    margin: 40px 0;
+}
+
+.productDetails span {
+    font-size: 25px;
+}
+
+.productDetails h1,
+p {
+    margin: 0;
+}
+
+.productDetails {
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e1e1;
+}
+
+.size {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.productDetails button {
+    background: none;
+    border: 1px solid #eae8e8;
+}
+
+.productDetails button:hover {
+    border: 1px solid red;
+}
+
+.sizeHeading {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.color {
+    background: #3b6a98;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
+
+.productDiscription h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.productDiscription span {
+    color: grey;
+    font-size: 13px;
+    display: block;
+}
+
+.productDetails p {
+    color: grey;
+}
+
+span.cut {
+    text-decoration: line-through;
+    color: grey;
+}
+
+span.offer {
+    color: #ff91b8;
+}

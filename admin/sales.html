@@ -1,22 +1,22 @@
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="SCSS/animate.css">	
-	<link rel="stylesheet" href="SCSS/bootstrap.min.css">	
-	<link rel="stylesheet" href="SCSS/main.css">	
-	<link rel="stylesheet" href="SCSS/meanmenu.min.css">
-	<link rel="stylesheet" href="SCSS/nivo-slider.css">	
-	<link rel="stylesheet" href="SCSS/normalize.css">
-	<link rel="stylesheet" href="SCSS/owl.carousel.css">
-	<link rel="stylesheet" href="SCSS/owl.theme.css">	
-	<link rel="stylesheet" href="SCSS/owl.transitions.css">
-	<link rel="stylesheet" href="SCSS/preview.css">
-	<link rel="stylesheet" href="SCSS/slick-theme.css">	
-	<link rel="stylesheet" href="SCSS/slick.css">
-	<link rel="stylesheet" href="SCSS/style-css.css">
-	<link rel="stylesheet" href="SCSS/style.css">
+    <link rel="stylesheet" href="../SCSS/animate.css">	
+	<link rel="stylesheet" href="../SCSS/bootstrap.min.css">	
+	<link rel="stylesheet" href="../SCSS/main.css">	
+	<link rel="stylesheet" href="../SCSS/meanmenu.min.css">
+	<link rel="stylesheet" href="../SCSS/nivo-slider.css">	
+	<link rel="stylesheet" href="../SCSS/normalize.css">
+	<link rel="stylesheet" href="../SCSS/owl.carousel.css">
+	<link rel="stylesheet" href="../SCSS/owl.theme.css">	
+	<link rel="stylesheet" href="../SCSS/owl.transitions.css">
+	<link rel="stylesheet" href="../SCSS/preview.css">
+	<link rel="stylesheet" href="../SCSS/slick-theme.css">	
+	<link rel="stylesheet" href="../SCSS/slick.css">
+	<link rel="stylesheet" href="../SCSS/style-css.css">
+	<link rel="stylesheet" href="../SCSS/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">	
-	<link rel="stylesheet" href="SCSS/responsive.css">
-    <link rel="stylesheet" href="SCSS/daterangepicker.css">
+	<link rel="stylesheet" href="../SCSS/responsive.css">
+    <link rel="stylesheet" href="../SCSS/daterangepicker.css">
     <title>Sale</title>
 </head>
 <body>
@@ -113,7 +113,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="table-img">
-                                    <a href=""><img title="blandit blandit" alt="" src="Images/final-image5.png"></a>
+                                    <a href=""><img title="blandit blandit" alt="" src="../Images/final-image5.png"></a>
                                 </td>
                                 <td>Kids Sweater</td>
                                 <td>1212156464</td>
@@ -129,10 +129,79 @@
         </div>
     </div>
 </section>
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <table id="datatable">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>January</th>
+          <td>300</td>
+        </tr>
+        <tr>
+            <th>February</th>
+            <td>350</td>
+        </tr>
+        <tr>
+            <th>march</th>
+            <td>400</td>
+        </tr>
+        <tr>
+            <th>April</th>
+            <td>450</td>
+        </tr>
+        <tr>
+            <th>May</th>
+            <td>500</td>
+        </tr>
+        <tr>
+            <th>June</th>
+            <td>550</td>
+        </tr>
+        <tr>
+            <th>July</th>
+            <td>600</td>
+        </tr>
+        <tr>
+            <th>August</th>
+            <td>650</td>
+        </tr>
+        <tr>
+            <th>September</th>
+            <td>700</td>
+        </tr>
+        <tr>
+            <th>October</th>
+            <td>750</td>
+        </tr>
+        <tr>
+            <th>November</th>
+            <td>800</td>
+        </tr>
+        <tr>
+            <th>December</th>
+            <td>850</td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
 
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/moment.min,js.js"></script>
-<script src="js/daterangepicker.min..js"></script>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/moment.min,js.js"></script>
+<script src="../js/daterangepicker.min..js"></script>
+<script src="../js/highcharts.js"></script>
+<script src="../Js/data.js"></script>
+<script src="../js/exporting.js"></script>
+<script src="../js/accessibility.js"></script>
+
+
+
+
 <script>
     $(function() {
   $('input[name="daterange"]').daterangepicker({
@@ -140,6 +209,26 @@
   }, function(start, end, label) {
     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
   });
+});
+Highcharts.chart('container', {
+  data: {
+    table: 'datatable'
+  },
+  chart: {
+    type: 'column'
+  },
+  yAxis: {
+    allowDecimals: false,
+    title: {
+      text: 'Units'
+    }
+  },
+  tooltip: {
+    formatter: function () {
+      return '<b>' + this.series.name + '</b><br/>' +
+        this.point.y + ' ' + this.point.name.toLowerCase();
+    }
+  }
 });
 </script>
 </body>
